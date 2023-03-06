@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <parent>
+        <artifactId>springboot-rabbitmq-parent</artifactId>
+        <groupId>com.fenix</groupId>
+        <version>1.0-SNAPSHOT</version>
+    </parent>
+    <!--<parent>
+        &lt;!&ndash;基础SpringBoot父的POM&ndash;&gt;
+        <groupId>org.springframework.boot</groupId>
+        <artifactId>spring-boot-starter-parent</artifactId>
+        <version>2.7.1</version>
+        <relativePath/> &lt;!&ndash; lookup parent from repository &ndash;&gt;
+    </parent>-->
+    <properties>
+        <java.version>1.8</java.version>
+    </properties>
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.fenix</groupId>
+    <artifactId>springboot-rabbitmq-consumer</artifactId>
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
+        </dependency>
+        <!--amqp的起步依赖坐标-->
+        <dependency>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-amqp</artifactId>
+        </dependency>
+    </dependencies>
+
+
+</project>
